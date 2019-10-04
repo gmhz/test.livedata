@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="couldnt_connection_to_the_server_s">Couldnt connect to the server %s</string>
+    <string name="current_value">Current value:</string>
+</resources>
