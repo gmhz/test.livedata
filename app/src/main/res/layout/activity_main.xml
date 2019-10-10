@@ -5,13 +5,26 @@
 
         <variable
             name="viewModel"
-            type="test.livedata.MainPageViewModel" />
+            type="test.livedata.viewmodels.MainPageViewModel" />
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/connectedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/disconnectedLayout"
@@ -29,41 +42,6 @@
                 android:text="@string/couldnt_connection_to_the_server_s"
                 android:textSize="32sp" />
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/connectedLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:padding="8dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="?selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:text="@string/current_value"
-                android:textColor="#cecece"
-                android:textSize="26sp" />
-
-            <TextView
-                android:id="@+id/valueTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="?selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:padding="16dp"
-                android:textColor="#000"
-                android:textSize="32sp" />
-        </LinearLayout>
-
 
     </FrameLayout>
 </layout>

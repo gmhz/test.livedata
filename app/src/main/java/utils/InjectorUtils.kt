@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package test.livedata
+package utils
 
 import android.content.Context
+import test.livedata.viewmodels.MainPageViewModelFactory
 
 /**
  * Static methods used to inject classes needed for various Activities and Fragments.

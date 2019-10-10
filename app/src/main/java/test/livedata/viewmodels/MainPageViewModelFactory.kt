@@ -1,4 +1,4 @@
-package test.livedata
+package test.livedata.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
